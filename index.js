@@ -79,11 +79,12 @@ async function run() {
         })
 
         // get all order api
-        app.get('/orders', async (req, res) => {
-            const order = orderCollection.find({})
-            const result = await order.toArray()
-            res.send(result);
+        app.get('/order', async (req, res) => {
+            const allOrder = orderCollection.find({})
+            const result = await allOrder.toArray()
+            res.json(result)
         });
+
         // Delete Product api
         app.delete('/deleteProduct/:id', async (req, res) => {
             const id = req.params.id;

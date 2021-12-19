@@ -1,0 +1,21 @@
+{
+  "name": "perfume-store-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm start",
+    "start-dev": "nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "envdot": "^0.0.3",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.2",
+    "stripe": "^8.194.0"
+  }
+}

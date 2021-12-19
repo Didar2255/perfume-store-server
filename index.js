@@ -41,7 +41,7 @@ async function run() {
             const result = await productsCollection.updateOne(filter, updateAppointment)
             res.json(result)
         })
-
+        //creat post api
 
         app.post('/orders', async (req, res) => {
             const orders = req.body;
@@ -155,8 +155,6 @@ async function run() {
     }
 }
 run().catch(console.dir);
-
-
 
 
 app.get('/', (req, res) => {
